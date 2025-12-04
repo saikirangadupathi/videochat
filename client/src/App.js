@@ -1,5 +1,4 @@
 import { AppBar, Typography } from '@mui/material';
-import { makeStyles } from '@mui/styles';
 import './App.css';
 import VideoPlayer from './components/VideoPlayer/VideoPlayer';
 import Options from './components/Options/Options';
