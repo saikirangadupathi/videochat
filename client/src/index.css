@@ -1,0 +1,34 @@
+body {
+  background-color: #f0f2f5; /* subtle app background */
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* App chrome */
+.appHeader {
+  background: linear-gradient(90deg,#075e54,#128C7E);
+  color: #fff;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-weight: 700;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+.appContainer {
+  display: flex;
+  height: calc(100vh - 64px);
+}
+
+.brand {
+  letter-spacing: 0.4px;
+}

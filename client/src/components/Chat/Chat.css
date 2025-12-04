@@ -1,0 +1,184 @@
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  height: 100%;
+  min-height: 320px;
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+
+.chatHeader {
+  padding: 12px 14px;
+  background: linear-gradient(90deg,#f7f7f7,#f0f0f0);
+  color: #075e54;
+  font-weight: 700;
+  border-radius: 8px 8px 0 0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.messagesList {
+  flex: 1 1 auto;
+  padding: 14px;
+  overflow-y: auto;
+  background: linear-gradient(180deg,#ffffff,#fafafa);
+  min-height: 120px;
+}
+
+.msgRow {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.msgRow.me {
+  justify-content: flex-end;
+}
+
+.msgRow.them {
+  justify-content: flex-start;
+}
+
+.msgBubble {
+  max-width: 78%;
+  padding: 10px 14px;
+  border-radius: 18px;
+  background: #ece5dd; /* incoming bubble */
+  color: #111;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+}
+
+.msgRow.me .msgBubble {
+  background: #dcf8c6; /* WhatsApp outgoing bubble */
+  align-self: flex-end;
+}
+
+.msgText {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.msgFile {
+  max-width: 200px;
+  display: block;
+  border-radius: 8px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #bdbdbd;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.msgRow.me .avatar {
+  order: 2;
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+.msgRow {
+  align-items: flex-end;
+}
+
+.chatToolbar {
+  display:flex;
+  gap:8px;
+  padding:10px 12px;
+  align-items:center;
+}
+
+.peerInput {
+  flex:1;
+  padding:8px;
+  border-radius:8px;
+  border:1px solid rgba(0,0,0,0.08);
+}
+
+.yourId {
+  font-size:12px;
+  color:#075e54;
+}
+
+.chatInfo {
+  padding:6px 12px;
+  font-size:12px;
+  color:#444;
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+
+.chatTextInput {
+  padding:8px 12px;
+  border-radius:20px;
+  background:#fff;
+}
+
+.fileLink {
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:8px;
+  background:rgba(0,0,0,0.04);
+  color:#075e54;
+  text-decoration:none;
+}
+
+.msgMeta {
+  font-size: 11px;
+  color: rgba(0,0,0,0.45);
+  display:flex;
+  justify-content: space-between;
+  gap:8px;
+  align-items: center;
+}
+
+.metaLeft {
+  color: rgba(0,0,0,0.6);
+}
+.metaRight {
+  color: rgba(0,0,0,0.45);
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.ticks {
+  margin-left: 6px;
+  font-size: 12px;
+  color: rgba(0,0,0,0.45);
+}
+.ticks.delivered {
+  color: rgba(0,0,0,0.45);
+}
+.ticks.read {
+  color: #34B7F1; /* WhatsApp blue */
+}
+
+.chatInput {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  border-top: 1px solid rgba(0,0,0,0.04);
+  align-items: center;
+}
+
+.chatInput .MuiInputBase-root {
+  background: #fff;
+  border-radius: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+
+@media (max-width: 900px) {
+  .chatContainer {
+    height: 360px;
+  }
+}
